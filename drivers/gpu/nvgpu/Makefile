@@ -16,7 +16,7 @@ ccflags-y += -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
 endif
 
 # Turn off when this is fixed upstream, if ever.
-ccflags-y += -D__NVGPU_PREVENT_UNTRUSTED_SPECULATION
+#ccflags-y += -D__NVGPU_PREVENT_UNTRUSTED_SPECULATION
 
 obj-$(CONFIG_GK20A) := nvgpu.o
 

@@ -52,10 +52,6 @@
 /*
  * Sometimes we want to prevent speculation.
  */
-#ifdef __NVGPU_PREVENT_UNTRUSTED_SPECULATION
-#define nvgpu_speculation_barrier()	__nvgpu_speculation_barrier()
-#else
 #define nvgpu_speculation_barrier()
-#endif
 
 #endif /* NVGPU_BARRIER_H */
